@@ -4,64 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zomoto</title>
+    <style>
+         /* body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+         } */
+        .navbar{
+          width:100%;
+          height: 120px;
+          background-color: rgb(86,131,131);
+          color: aliceblue;
+          align-items: center;
+          text-align:center;
+          font-size: 25px;
+          display: flex;
+          padding: 0px;
+          border-radius: 50px;
+          justify-content: space-between;
+        }
+        .ul{
+          display:flex;
+          text-decoration: none;
+          list-style: none;
+        }  
+        li{
+          /* padding:0px; */
+          /* margin-right: 8px; */
+          padding-right: 0px;
+          margin-left: 300px;
+          font-weight: bolder;
+          color: brown;
+        }
+        .li:hover{
+          background-color: azure;
+          border-radius: 10px;
+          cursor:pointer;
+        }
+        h1{
+            text-align: center;
+            color: red;
+            font-size: 36px;
+            margin-right: 20px;           
+        }
+        
+        .FoodItems{
+            text-align: middle;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        
+      
+        .FoodItems img{
+            border: 2px solid ;
+            border-radius: 50%;
+            margin-right: 40px;
+            align-items:middle;
+            
+            margin-bottom: 10px;
+            /* margin-bottom: 10px; */
+        }
+        .FoodItems p{
+            margin:0 auto 0px;
+            
+        }
+        .Brands {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+       }
+
+       .Brands img {
+           align-items: middle;  
+           width: 200px;
+           height: 200px;
+           border: 2px solid azure; 
+           border-radius: 20% ; 
+           margin-bottom: 10px; 
+      }
+      h2{
+        color:coral ;
+      }
+      .item p{
+           font-family: Arial;
+
+      }
+
+      .BrandItem {
+           text-align: center;
+     }
+
+     .BrandItem p {
+           margin: 0;
+           font-family: Arial, Helvetica, sans-serif;
+     }  
+     .Restaurants {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+           margin-bottom: 20px;
+      }
+    
+     .RestNames img {
+          text-align: center;
+          width: 300px;
+          height: 300px;
+          object-fit: cover; 
+          border: 2px solid; 
+          border-radius: 10px; 
+          margin-bottom: 20px; 
+      }
+    
+      .caption {
+         display: block;
+      }
+    </style>
 </head>
 <body>
-    <h1><strong><center>ZOMATO</center></strong></h1>
-    <marquee><h1><b>Order food delivery</b></h1></marquee>
+  <h1><strong>Zomato</strong></h1>
+  <nav class="navabar">
+    <!-- <a href="#" class="lname">ZOMATO</a> -->
+    <ul class="ul">
+      <li class="li"><i>HOME</i></li><br>
+      <li class="li"><i>ABOUT US</i></li><br>
+      <li class="li">CONTACT</li>
+    </ul>
+  </nav>
+  
+    <!-- <h1><strong>Zomato<strong></h1> -->
+    <marquee ><h1><b>Order food delivery</b></h1></marquee>
     <fieldset><legend></legend>
         <center><h2><b>Are you hungry?</b></h2>
                     <h3><i>Don't wait!!!</i><pre><i>Let start to order food now!</i></pre></center></fieldset>
-        &nbsp;&nbsp;&nbsp;  
-        <h1><b>Delivery first,satisfaction all time.</b></h1>              
-        <div class = 'Food items'>
-        <img src="Biryani.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="pizza.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="burger.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="chick leg piece.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="Thali.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="fired rice.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <pre>&nbsp;&nbsp;&nbsp;&nbsp;<i>Biryani</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>pizza</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>burger</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>chickenleg piece</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Thali</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>fried rice</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-    </div>
-    &nbsp;&nbsp;&nbsp;
-    <div>
-        <img src="rolls.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="NorthIndain.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="cake2.jpg" alt="" width="170" heigth="170">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="idli.jpg" alt="" width="180" heigth="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="paneer.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="dosa.jpg" alt="" width="150" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <pre>&nbsp;&nbsp;&nbsp;<i>Rolls</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>North Indian</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Cake</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Idli</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Paneer</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Dosa</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-    </div>
+          
+        <h2><b>Delivery first,satisfaction all time.</b></h2>              
+        <div class="FoodItems">
+            <div>
+              <img src="Biryani.jpg" alt="" width="100" height="100">
+              <p class="text under image">Biryani</p>
+            </div>
+          
+            <div>
+              <img src="pizza.jpg" alt="" width="100" height="100">
+              <p class="text under image">Pizza</p>
+            </div>
+          
+            <div>
+              <img src="burger.jpg" alt="" width="100" height="100">
+              <p class="text under image">Burger</p>
+              
+            </div>
+          
+            <div>
+              <img src="chick leg piece.jpg" alt="" width="100" height="100">
+              <p class="text under image">Chicken</p>
+            </div>
+          
+            <div>
+              <img src="Thali.jpg" alt="" width="100" height="100">
+              <p class="text under image">Thali</p>
+            </div>
+          
+            <div>
+              <img src="fired rice.jpg" alt="" width="100" height="100">
+              <p class="text under image">Fired Rice</p>
+            </div>
+            <div>
+              <img src="rolls.jpg" alt="" width="100" height="100">
+              <p class="text under image">Rolls</p>
+            </div>
+              
+            <div>
+              <img src="NorthIndain.jpg" alt="" width="100" height="100">
+              <p class="text under image">North Indian</p>
+            </div>
+              
+            <div >
+              <img src="cake2.jpg" alt="" width="100" height="100">
+              <p class="text under image">Cake</p>
+            </div>
+              
+            <div >
+               <img src="idli.jpg" alt="" width="100" height="100">
+               <p class="text under image">Idli</p>
+            </div>
+              
+            <div >
+               <img src="paneer.jpg" alt="" width="100" height="100">
+               <p class="text under image">Paneer</p>
+            </div>
+              
+            <div >
+                <img src="dosa.jpg" alt="" width="100" height="100">
+                <p class="text under image">Dosa</p>
+            </div>
+            <div >
+                <img src="Noodels.jpeg" alt="" width="100" height="100">
+                <p class="text under image">Noodles</p>
+            </div>
+            <div >
+                <img src="Ice cream.jpeg" alt="" width="100" height="100">
+                <p class="text under image">Ice cream</p>
+            </div>
+        </div>
     <h2><strong>You select,we deliver-fast,fresh and instant food.</strong></h2>
+
     <div class="Brands">
-        <img src="McDonalds.jpg" alt="" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="Domino's.jpg" alt="" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="KFC.jpg" alt="" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="burger king.jpg" alt="" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="haldiram.jpg" alt="" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>McDonalds</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Domino's</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>KFC</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Burger King</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Haldiram's</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-    </div>
+        <div class="BrandItem">
+          <img src="McDonalds.jpg" alt="" width="200" height="200">
+          <p class="text under image">McDonald's</p>
+          <p class="current time"><i>30 min</i></p>
+        </div>
+    
+        <div class="BrandItem">
+          <img src="Domino's.jpg" alt="" width="200" height="200">
+          <p class="text under image">Domino's</p>
+          <p class="current time"><i>25 min</i></p>
+
+        </div>
+    
+        <div class="BrandItem">
+          <img src="KFC.jpg" alt="" width="200" height="200">
+          <p class="text under image">KFC</p>
+          <p class="current time"><i>27 min</i></p>
+        </div>
+    
+        <div class="BrandItem">
+          <img src="burger king.jpg" alt="" width="200" height="200">
+          <p class="text under image">Burger King</p>
+          <p class="current time"><i>20 min</i></p>
+        </div>
+    
+        <div class="BrandItem">
+          <img src="haldiram.jpg" alt="" width="200" height="200">
+          <p class="text under image">Haldiram</p>
+          <p class="current time"><i>45 min</i></p>
+        </div>
+      </div>
     <h2>Delivery Restaurants in Bangalore</h2>
     <div class="Restaurants">
-        <img src="https://b.zmtcdn.com/data/pictures/chains/6/59916/95177ed226010a6be13935df30d552e4_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://b.zmtcdn.com/data/pictures/chains/9/19051939/631e94b5e92a24f8dc745a253a4caeeb_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://b.zmtcdn.com/data/pictures/chains/3/18343993/a8c84349c1138e70cf3870a850f5e29d_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Sri Udupi Sagar</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Andhra GunPowder</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Behrouz Biryani</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-    </div>    
-    <div>
-        <img src="https://b.zmtcdn.com/data/pictures/chains/5/61555/8c49ba335683507ba6ddee2dc84966e8_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://b.zmtcdn.com/data/pictures/3/20278443/0f5a49658467e891f744d486edd9bd12_featured_v2.jpg?output-format=webp" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://b.zmtcdn.com/data/pictures/6/20192576/20b4a8b5bc8d89f87fbeec7776afd651_featured_v2.jpg?output-format=webp" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Burger King</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Manhar Trendy Foods</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Pani Puri</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-    </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/6/59916/95177ed226010a6be13935df30d552e4_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Sri Udupi Sagar</b></p> -->
+            <span class="caption"><b>Sri Udupi Sagar</b></span>
+            <p class="item"><i>Idli,Dosa,Vada....</i></p>
+            <p class="current time"><i>30 min</i></p>
+            
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/9/19051939/631e94b5e92a24f8dc745a253a4caeeb_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Andhra GunPowder</b></p> -->
+            <span class="caption">Andhra GunPowder</span>
+            <p class="item"><i>Meals,Biryani.....</i></p>
+            <p class="current time"><i>27 min</i></p>
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/3/18343993/a8c84349c1138e70cf3870a850f5e29d_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Behrouz Biryani</b></p> -->
+            <span class="caption">Behrouz Biryani</span>
+            <p class="item"><i>Chicken Biryani,chicken65.....</i></p>
+            <p class="current time"><i>25 min</i></p>
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/5/61555/8c49ba335683507ba6ddee2dc84966e8_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Burger King</b></p> -->
+            <span class="caption">Burger King</span>
+            <p class="item"><i>Veg Burger,Chicken Burger....</i></p>
+            <p class="current time"><i>20 min</i></p>
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/3/20278443/0f5a49658467e891f744d486edd9bd12_featured_v2.jpg?output-format=webp" alt="" height="150" width="150">
+             <!-- <p class="text-under-image"><b>Manhar Trendy Foods</b></p>  -->
+            <span class="caption">Manhar Trendy Foods</span>
+            <p class="item"><i>Grape Juice,Mango Juice,Milk Shake....</i></p>
+            <p class="current time"><i>27 min</i></p>
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/6/20192576/20b4a8b5bc8d89f87fbeec7776afd651_featured_v2.jpg?output-format=webp" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Pani Puri</b></p> -->
+            <span class="caption">Pani Puri</span>
+            <p class="item"><i>Masala Puri,Dai Puri....</i></p>
+            <p class="current time"><i>30 min</i></p>
+            
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/7/18379377/02c31a308d7b9d4a0adc1d33ebb20a25_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Cake Zone</b></p> -->
+            <span class="caption">Cake Zone</span>
+            <p class="item"><i>Chocolate,Vanilla....</i></p>
+            <p class="current time"><i>55 min</i></p>
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/2/18692582/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>La Pino'z Pizza</b></p> -->
+            <span class="caption">La Pino'z Pizza</span>
+            <p class="item"><i>veg pizza,chicken pizza,panner pizza....</i></p>
+            <p class="current time"><i>50 min</i></p>
+        </div>
+        <div class="RestNames">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/0/52860/6750c2fe1f25a444991eee4d7afd5dd9_o2_featured_v2.jpg" alt="" height="150" width="150">
+            <!-- <p class="text-under-image"><b>Chai Point</b></p> -->
+            <span class="caption">Chai Point</span>
+            <p class="item"><i>Coffee,Tea,Ginger tea....</i></p>
+            <p class="current time"><i>15 min</i></p>
+        </div>   
+    </div> 
 
-    <div>
-        <img src="https://b.zmtcdn.com/data/pictures/chains/7/18379377/02c31a308d7b9d4a0adc1d33ebb20a25_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://b.zmtcdn.com/data/pictures/chains/2/18692582/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <img src="https://b.zmtcdn.com/data/pictures/chains/0/52860/6750c2fe1f25a444991eee4d7afd5dd9_o2_featured_v2.jpg" alt="" height="300" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Cake Zone</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>La Pino'z Pizza</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Chai Point</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-    </div>
-        
-        
+
 </body>
 </html>
